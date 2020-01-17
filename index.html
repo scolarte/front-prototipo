@@ -3,62 +3,765 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    
     <title>Escolarte</title>
-    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Bootstrap  and dependencies CSS -->    
+    <link rel="stylesheet" href="/assets/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Prio Css -->
+    
+    <!-- Prio Js -->
+    <script src="/assets/libs/jquery/jquery.js"></script>
+    <script src="/assets/js/colors.js"></script>
+    <script src="/assets/js/side-menu.js"></script>
+    <script src="/assets/js/layout.js"></script>
   </head>
-  <body>    
-    <!-- Header -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+  <body class="bg-gray-100">    
+    <!-- Wrapper -->
+    <div class="layout layout--theme--light--primary">
+        
+        <div class="layout__sidebar">
+                
+            <div class="sidebar sidebar--animations-enabled sidebar--collapsed sidebar--animate-entry-complete">
+                <div class="sidebar__close">
+                    <a href="javascript:;" class="action--sidebar-trigger">
+                        <i class="fa fa-times-circle fa-fw"></i>
+                    </a>
                 </div>
-              </nav>
-        </header>
-    <!-- /Header -->
+                <!-- START Sidebar TOP FIXED ALWAYS  -->
+                <div class="sidebar__section sidebar__hide-slim" style="">
+                    
+                                <!-- START Logo TOP FIXED #1 -->
+                    <div>
+                        <a class="h4 fw-600 sidebar__brand" href="/">
+                            Escolarte
+                        </a>
+                    </div>
+                    <!-- END Logo TOP FIXED #1 -->
+                    
+                </div>
+                <!-- END Sidebar TOP FIXED ALWAYS  -->
+                <div class="sidebar__mobile-fluid">
+                    <!-- START Sidebar TOP -->
+                    
+                                <!-- START Sidebar TOP #1 -->
+                    <div class="sidebar__section sidebar__hide-slim pt-0" style="">
+                        <a href="/" class="d-block">
+                            <div class="avatar-image avatar-image--loaded">
+                                <div class="avatar avatar--lg avatar-image__image">
+                                    <div class="avatar__icon avatar__icon--stack">
+                                        <i class="text-white fa fa-circle"></i>
+                                        <i class="text-success fa fa-circle"></i>
+                                    </div>
+                                    <div class="avatar__content">
+                                        <img src="https://pbs.twimg.com/profile_images/663757339464339456/x5W7t_CG_400x400.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="d-flex">
+                            <div class="dropdown">
+                                <button class="btn-profile btn btn-link sidebar__link dropdown-toggle no-caret pl-0 pb-0 mb-0 h6" type="button" data-toggle="dropdown">
+                                    <span>Victor Diaz</span>
+                                    <i class="fa fa-angle-down fa-fw sidebar__link--muted"></i>
+                                </button>                                        
+                                <!-- START Dropdown Profile  -->
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                    <h6 class="dropdown-header">
+                                        C. Malkovich
+                                    </h6>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/jquery/airframe/apps/profile-details.html">
+                                        My Profile
+                                    </a>
+                                    <a class="dropdown-item" href="/jquery/airframe/apps/account-settings.html">
+                                        Account Settings
+                                    </a>
+                                    <a class="dropdown-item" href="/jquery/airframe/apps/faq.html">
+                                        Support
+                                    </a>
+                                    <a class="dropdown-item" href="/jquery/airframe/apps/billing-edit.html">
+                                        Billing
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/jquery/airframe/pages/login.html">
+                                        <i class="fa mr-1 fa-sign-out text-muted"></i> 
+                                        Sign Out
+                                    </a>
+                                </div>
+                                <!-- END Dropdown Profile  -->
+                            </div>
+                        </span>
+                        <div class="sidebar__link--muted small">
+                            <span>Fullstack Engineer</span>
+                        </div>
+                    </div>
+                    <!-- START Slim Content -->
+                    <div class="sidebar__section sidebar__show-slim">
+                        <a href="/" class="d-block">
+                            <div class="avatar-image avatar-image--loaded">
+                                <div class="avatar avatar--sm avatar-image__image">
+                                    <div class="avatar__icon avatar__icon--stack">
+                                        <i class="text-white fa fa-circle"></i>
+                                        <i class="text-success fa fa-circle"></i>
+                                    </div>
+                                    <div class="avatar__content">
+                                        <img src="https://pbs.twimg.com/profile_images/663757339464339456/x5W7t_CG_400x400.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END Slim Content -->
+                    <!-- END Sidebar TOP #1 -->
+                    
+                    <!-- END Sidebar TOP -->
+                    <!-- START Sidebar MIDDLE -->
+                    <div class="sidebar__section sidebar__section--fluid sidebar__section--cover" style="opacity: 1;">
+                        
+                                    <!-- START Sidebar: Full -->
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu__entry sidebar-menu__entry--nested active open" style="">
+                            <a href="javascript:;" class="sidebar-menu__entry__link">
+                                <i class="fa fa-fw fa-home sidebar-menu__entry__icon"></i>
+                                <span>Dashboards</span>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li class="sidebar-submenu__entry">
+                                    <a class="sidebar-submenu__entry__link" href="/">
+                                        <span>Projects</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-submenu__entry active">
+                                    <a class="sidebar-submenu__entry__link" href="/">
+                                        <span>System</span>
+                                    </a>
+                                </li>                            
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- END Sidebar: Full -->
+                        
+                    </div>
+                    <!-- END Sidebar MIDDLE -->
+                    <!-- START Sidebar BOTTOM -->
+                                                                
+                    <!-- Init Version Selector -->
+                    <script>
+                        $(function() {
+                            // Init Current Version Holder
+                            Dashboard.VersionSelector.initVersionWidget(
+                                "jQuery",
+                                "Airframe",
+                                $("#version-dropdown-trigger"),
+                                function(dashboardDef, $container) {
+                                    $container.removeClass("disabled");
+                                }
+                            );
+                    
+                            // Init Version Dropdown
+                            Dashboard.VersionSelector.initVersionsDropdown(
+                                "Airframe",
+                                $(".version-dropdown"),
+                                '<a class="dropdown-item d-flex" data-version="link">' +
+                                '   <span>' +
+                                '       <span data-version="label"></span> <span data-version="number"></span>' +
+                                '       <br />' +
+                                '       <span class="small" data-version="date"></span>' +
+                                '   </span>' +
+                                '</a>',
+                                function(dashboardDef, $itemElement) {
+                                    // If version is active
+                                    if (dashboardDef.dashboardName === "Airframe" && dashboardDef.label === "jQuery") {
+                                        $itemElement
+                                            .addClass("active")
+                                            .append('<i class="fa fa-check fa-fw pl-2 align-self-center text-success ml-auto"></i>');
+                                    }
+                                }
+                            );
+                        });
+                    </script>
+                            
+                    <div class="sidebar__section sidebar__hide-slim" style="">                                        
+                        <!-- START Footer -->
+                        <p class="small text-muted">
+                            (C) 2020 All Rights Reserved. This is the Admin Theme built from Bootstrap 4. Designed and implemented by <a href="http://www.webkom.co" class="sidebar__link text-muted" target="_blank">www.webkom.co</a>
+                        </p>
+                        <!-- END Footer -->
+                    </div>
+                    <!-- END Sidebar BOTTOM -->
+                </div>
+            </div>
+            
+            <script>
+                Dashboard.Sidebar.init($, window);
+            </script>
+        </div>
 
-    <!-- Footer -->
-    <!-- /Footer -->
+        <div class="layout__wrap">
+            <!-- NAVBAR LAYOUT -->
+            <div class="layout__navbar">            
+                <!-- START NAVBAR -->
+                <nav class="navbar navbar-expand navbar-light bg-none">
+                    <!-- START Navbar Left Side -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link action--sidebar-trigger"><i class="fa fa-bars fa-fw"></i></a>
+                        </li>
+                        <li class="navbar-brand ml-2 fw-600 d-lg-none">
+                            <a href="/" class="d-block">
+                                EscolarteApp
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <span class="ml-4 navbar-text">
+                                <a href="/jquery/airframe/index.html">
+                                    <i class="fa fa-home"></i>
+                                </a>
+                                <i class="fa fa-angle-right ml-2 mr-2"></i>
+                                <a href="#">
+                                    Start
+                                </a>
+                                <i class="fa fa-angle-right ml-2 mr-2"></i>
+                                System
+                            </span>
+                        </li>
+                    </ul>
+                    <!-- END Navbar Left Side -->
+                    
+                    <!-- START Navbar Right Side -->
+                    <ul class="ml-auto navbar-nav">
+                        <!-- START Dropdown Activity -->
+                        <li class="dropdown nav-item">
+                            <a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false" data-toggle="dropdown">
+                                <div class="icon-with-badge">
+                                    <i class="fa fa-bell-o fa-fw"></i>
+                                    <span class="icon-with-badge__badge badge badge-secondary badge-pill">6</span>
+                                </div>
+                            </a>
+                            
+                            <!-- START Dropdown Activity Extended -->
+                            <div class="dropdown-menu extended-dropdown dropdown-menu-right" role="menu">
+                                <div class="extended-dropdown__section d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">Activity</h6>
+                                    <span class="badge badge-secondary badge-pill ml-auto">6</span>
+                                </div>
+                                <div class="extended-dropdown__section extended-dropdown__section--list">
+                                    <ul class="list-group">
+                                        <a class="list-group-item list-group-item-action" href="/">                
+                                <div class="media">
+                                    <span class="fa-stack fa-lg fa-fw d-flex mr-3">
+                                        <i class="fa fa-circle fa-fw fa-stack-2x text-success"></i>
+                                        <i class="fa fa-check fa-stack-1x fa-fw text-white"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <span class="h6">
+                                            <span data-faker="[[name.firstName}} [[name.lastName}}">Dejuan Hilpert</span>
+                                        </span> 
+                                        <span>changed Description to 
+                                            "<span data-faker="[[random.words]]">Unbranded calculate</span>"
+                                        </span>
+                                        <p class="mt-2 mb-1">
+                                            <span data-faker="[[lorem.sentence]]">Est qui voluptate.</span>
+                                        </p>
+                                        <div class="mt-2">
+                                            <span data-faker="[[date.day]]-[[date.monthShort]]-[[date.year]], [[date.time]]" class="small">31-Mar-2014, 02:21</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/projects-list.html">
+                                                            
+                                <div class="media">
+                                    <span class="fa-stack fa-lg fa-fw d-flex mr-3">
+                                        <i class="fa fa-circle fa-fw fa-stack-2x text-danger"></i>
+                                        <i class="fa fa-close fa-stack-1x fa-fw text-white"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <span class="h6">
+                                            <span data-faker="[[name.firstName}} [[name.lastName}}">Delia McGlynn</span>
+                                        </span> 
+                                        <span>changed Description to 
+                                            "<span data-faker="[[random.words]]">definition</span>"
+                                        </span>
+                                        <p class="mt-2 mb-1">
+                                            <span data-faker="[[lorem.sentence]]">Provident qui rem neque quae eum exercitationem.</span>
+                                        </p>
+                                        <div class="mt-2">
+                                            <span data-faker="[[date.day]]-[[date.monthShort]]-[[date.year]], [[date.time]]" class="small">15-Jun-2014, 04:21</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/projects-list.html">
+                                                            
+                                <div class="media">
+                                    <span class="fa-stack fa-lg fa-fw d-flex mr-3">
+                                        <i class="fa fa-circle fa-fw fa-stack-2x text-warning"></i>
+                                        <i class="fa fa-exclamation fa-stack-1x fa-fw text-white"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <span class="h6">
+                                            <span data-faker="[[name.firstName}} [[name.lastName}}">Kacie Bogisich</span>
+                                        </span> 
+                                        <span>changed Description to 
+                                            "<span data-faker="[[random.words]]">Cayman Islands Personal Loan Account</span>"
+                                        </span>
+                                        <p class="mt-2 mb-1">
+                                            <span data-faker="[[lorem.sentence]]">Ipsum sit odio reprehenderit qui illum illo.</span>
+                                        </p>
+                                        <div class="mt-2">
+                                            <span data-faker="[[date.day]]-[[date.monthShort]]-[[date.year]], [[date.time]]" class="small">12-Dec-2016, 08:36</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/projects-list.html">
+                                                            
+                                <div class="media">
+                                    <span class="fa-stack fa-lg fa-fw d-flex mr-3">
+                                        <i class="fa fa-circle fa-fw fa-stack-2x text-primary"></i>
+                                        <i class="fa fa-info fa-stack-1x fa-fw text-white"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <span class="h6">
+                                            <span data-faker="[[name.firstName}} [[name.lastName}}">Chelsie Green</span>
+                                        </span> 
+                                        <span>changed Description to 
+                                            "<span data-faker="[[random.words]]">Colorado</span>"
+                                        </span>
+                                        <p class="mt-2 mb-1">
+                                            <span data-faker="[[lorem.sentence]]">Vel vitae perferendis voluptatem libero debitis qui molestiae ea.</span>
+                                        </p>
+                                        <div class="mt-2">
+                                            <span data-faker="[[date.day]]-[[date.monthShort]]-[[date.year]], [[date.time]]" class="small">25-Apr-2011, 05:02</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a class="extended-dropdown__section text-center" href="/jquery/airframe/apps/projects-list.html">
+                                    See All Notifications<i class="fa fa-angle-right fa-fw ml-2"></i>
+                                </a>
+                            </div>
+                            <!-- END Dropdown Activity Extended  -->
+                        </li>
+                        <!-- END Dropdown Activity -->
+                        <!-- START Dropdown Messages -->
+                        <li class="ml-2 dropdown nav-item">
+                            <a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false" data-toggle="dropdown" id="navbar-dropdown-messages">
+                                <div class="icon-with-badge">
+                                    <i class="fa fa-envelope-o fa-fw"></i>
+                                    <span class="icon-with-badge__badge badge badge-theme badge-pill">3</span>
+                                </div>
+                            </a>
+                            <!-- START Dropdown Content: Messages Extended -->
+                            <div class="dropdown-menu extended-dropdown dropdown-menu-right" role="menu" aria-labelledby="navbar-dropdown-messages">
+                                <div class="extended-dropdown__section d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">Message</h6>
+                                    <a href="/"><i class="fa fa-pencil"></i></a>
+                                </div>
+                                <div class="extended-dropdown__section">
+                                    <div class="input-group">
+                                        <input placeholder="Search Messages..." type="text" class="form-control">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extended-dropdown__section extended-dropdown__section--list">
+                                    <ul class="list-group">
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/email-details">
+                                                                        
+                                <div class="media">
+                                    <div class="media-left mr-4">                                                                                                
+                                        <div class="avatar-image avatar-image--loaded ">
+                                            <div class="avatar avatar-image__image avatar--md">
+                                                <div class="avatar__content">
+                                                    <img src="http://react.bs4.webkom.co/static/avatar-1.jpg">
+                                                </div>
+                                                <div class="avatar__icon avatar__icon--stack ">
+                                                    <i class="fa fa-circle text-white"></i>
+                                                    <i class="fa fa-circle text-warning"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="d-flex justify-content-start">
+                                            <span class="h6 pb-0 mb-0 d-flex align-items-center" data-faker="[[name.firstName}} [[name.lastName}}">Ima Cronin</span>
+                                            <span class="ml-1 small">(23)</span>
+                                            <span class="ml-auto small">Now</span>
+                                        </span>
+                                        <p class="mt-2 mb-1" data-faker="[[lorem.sentences]]">Iusto exercitationem corrupti aperiam quia est reprehenderit error vel voluptatibus. Neque ex sit voluptas est totam minima hic placeat. Non sunt sunt delectus omnis sit ut occaecati voluptatem. Nemo optio qui. Aut quia perspiciatis.</p>
+                                    </div>
+                                </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/email-details">
+                                                                        
+                                <div class="media">
+                                    <div class="media-left mr-4">                                                
+                                        <div class="avatar-image avatar-image--loaded ">
+                                            <div class="avatar avatar-image__image avatar--md">
+                                                <div class="avatar__content">
+                                                    <img src="http://react.bs4.webkom.co/static/avatar-1.jpg">
+                                                </div>    
+                                                <div class="avatar__icon avatar__icon--stack ">
+                                                    <i class="fa fa-circle text-white"></i>            
+                                                    <i class="fa fa-circle text-secondary"></i>                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="d-flex justify-content-start">
+                                            <span class="h6 pb-0 mb-0 d-flex align-items-center" data-faker="[[name.firstName}} [[name.lastName}}">Justen Botsford</span>
+                                            <span class="ml-1 small">(23)</span>
+                                            <span class="ml-auto small">Now</span>
+                                        </span>
+                                        <p class="mt-2 mb-1" data-faker="[[lorem.sentences]]">Quisquam minus earum quia fuga debitis reprehenderit. Est in voluptatem illo commodi. Rerum facere ipsa accusantium dolorum quis earum laboriosam. Quas sed ut temporibus nemo a explicabo temporibus. Totam totam sint nemo.</p>
+                                    </div>
+                                </div>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action" href="/jquery/airframe/apps/email-details">
+                                                                        
+                                <div class="media">
+                                    <div class="media-left mr-4">                                                                                                
+                                        <div class="avatar-image avatar-image--loaded ">
+                                            <div class="avatar avatar-image__image avatar--md">
+                                                <div class="avatar__content">
+                                                    <img src="http://react.bs4.webkom.co/static/avatar-1.jpg">
+                                                </div>
+                                                
+                                                <div class="avatar__icon avatar__icon--stack ">
+                                                    <i class="fa fa-circle text-white"></i>            
+                                                    <i class="fa fa-circle text-secondary"></i>        
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                                    <div class="media-body">
+                                        <span class="d-flex justify-content-start">
+                                            <span class="h6 pb-0 mb-0 d-flex align-items-center" data-faker="[[name.firstName}} [[name.lastName}}">Consuelo Runolfsson</span>
+                                            <span class="ml-1 small">(23)</span>
+                                            <span class="ml-auto small">Now</span>
+                                        </span>
+                                        <p class="mt-2 mb-1" data-faker="[[lorem.sentences]]">Ut accusantium voluptas ipsam in explicabo laudantium. Sequi tempore hic doloremque quibusdam porro. Laboriosam qui rem nobis sunt accusantium eum voluptates perspiciatis. Eos et officiis reprehenderit molestiae possimus odit quia architecto. Qui velit eum commodi cupiditate et dolorem et.</p>
+                                    </div>
+                                </div>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a class="extended-dropdown__section text-center" href="/jquery/airframe/apps/inbox.html">
+                                    View All<i class="fa fa-angle-right fa-fw ml-2"></i>
+                                </a>
+                            </div>
+                            <!-- END Dropdown Content: Messages Extended -->
+                        </li>
+                        <!-- END Dropdown Messages -->
+                        <li class="ml-2 nav-item">
+                            <a class="nav-link" href="/jquery/airframe/pages/login.html">
+                                <i class="fa fa-power-off"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END Navbar Right Side -->
+                </nav>
+                <!-- END NAVBAR -->
+            </div>
+            <!-- /NAVBAR LAYOUT -->
+
+            <!-- CONTENT LAYOUT -->
+            <div class="layout__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- START HEADER Content -->
+                            <h1 class="display-4 mb-3 mt-2">
+                                Mis Listas
+                            </h1>
+                            <!-- END HEADER Content -->
+                        </div>
+                    </div>
+                    <!-- START CONTENT -->
+                    <div class="row mt-5">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 mb-lg-0">
+                                                    
+                                        
+                                        <!-- START Card Counter -->
+                                        <div class="card">
+                                            <div class="card-body pb-0">
+                                                <div class="d-flex mb-3">
+                                                    <span>
+                                                        <span class="mb-3 badge badge-primary badge-pill">
+                                                            <i class=" fa fa-fw fa-caret-down"></i>12%
+                                                        </span>
+                                                        <div class="mb-0 text-inverse">Memory</div>
+                                                        <h2 class="mb-3">
+                                                            25 
+                                                            <small>%</small>
+                                                        </h2>
+                                                    </span>
+                                                    <span class="text-right ml-auto">
+                                                        
+                                                            <p class="data-attributes">
+                                                                <span data-peity="{ &quot;fill&quot;: [&quot;#1EB7FF&quot;, &quot;#E9ECEF&quot;], &quot;innerRadius&quot;: 35, &quot;radius&quot;: 42 }" style="display: none;">4/7</span><svg class="peity" height="84" width="84"><path d="M 42 0 A 42 42 0 1 1 23.77688295706256 79.8406924519016 L 26.814069130885468 73.53391037658467 A 35 35 0 1 0 42 7" data-value="4" fill="#1EB7FF"></path><path d="M 23.77688295706256 79.8406924519016 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 26.814069130885468 73.53391037658467" data-value="3" fill="#E9ECEF"></path></svg>
+                                                            </p>
+                                                        
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <span class="bar peity-bar-secondary" style="display: none;">
+                                                    3,
+                                                    2,
+                                                    5,
+                                                    9,
+                                                    6,
+                                                    10,
+                                                    7,
+                                                    9,
+                                                    4,
+                                                    3,
+                                                    3,
+                                                    7,
+                                                    1,
+                                                    3,
+                                                    6,
+                                                    1,
+                                                    9,
+                                                    3,
+                                                    6,
+                                                    2,
+                                                    7,
+                                                    5,
+                                                    1,
+                                                    2,
+                                                    10,
+                                                    4
+                                                    </span><svg class="peity" height="60" width="200"><rect data-value="3" fill="#E9ECEF" x="0.7692307692307693" y="42" width="6.153846153846154" height="18"></rect><rect data-value="2" fill="#E9ECEF" x="8.461538461538463" y="48" width="6.1538461538461515" height="12"></rect><rect data-value="5" fill="#E9ECEF" x="16.153846153846153" y="30" width="6.153846153846153" height="30"></rect><rect data-value="9" fill="#E9ECEF" x="23.846153846153847" y="6" width="6.153846153846153" height="54"></rect><rect data-value="6" fill="#E9ECEF" x="31.538461538461533" y="24" width="6.15384615384616" height="36"></rect><rect data-value="10" fill="#E9ECEF" x="39.230769230769226" y="0" width="6.15384615384616" height="60"></rect><rect data-value="7" fill="#E9ECEF" x="46.92307692307692" y="18" width="6.15384615384616" height="42"></rect><rect data-value="9" fill="#E9ECEF" x="54.61538461538461" y="6" width="6.153846153846153" height="54"></rect><rect data-value="4" fill="#E9ECEF" x="62.30769230769231" y="36" width="6.15384615384616" height="24"></rect><rect data-value="3" fill="#E9ECEF" x="70" y="42" width="6.15384615384616" height="18"></rect><rect data-value="3" fill="#E9ECEF" x="77.6923076923077" y="42" width="6.153846153846146" height="18"></rect><rect data-value="7" fill="#E9ECEF" x="85.38461538461539" y="18" width="6.153846153846146" height="42"></rect><rect data-value="1" fill="#E9ECEF" x="93.07692307692308" y="54" width="6.153846153846146" height="6"></rect><rect data-value="3" fill="#E9ECEF" x="100.76923076923077" y="42" width="6.153846153846146" height="18"></rect><rect data-value="6" fill="#E9ECEF" x="108.46153846153847" y="24" width="6.153846153846146" height="36"></rect><rect data-value="1" fill="#E9ECEF" x="116.15384615384616" y="54" width="6.153846153846146" height="6"></rect><rect data-value="9" fill="#E9ECEF" x="123.84615384615387" y="6" width="6.153846153846104" height="54"></rect><rect data-value="3" fill="#E9ECEF" x="131.53846153846155" y="42" width="6.153846153846132" height="18"></rect><rect data-value="6" fill="#E9ECEF" x="139.23076923076925" y="24" width="6.153846153846104" height="36"></rect><rect data-value="2" fill="#E9ECEF" x="146.92307692307693" y="48" width="6.153846153846132" height="12"></rect><rect data-value="7" fill="#E9ECEF" x="154.61538461538464" y="18" width="6.153846153846132" height="42"></rect><rect data-value="5" fill="#E9ECEF" x="162.30769230769232" y="30" width="6.153846153846132" height="30"></rect><rect data-value="1" fill="#E9ECEF" x="170" y="54" width="6.15384615384616" height="6"></rect><rect data-value="2" fill="#E9ECEF" x="177.69230769230768" y="48" width="6.15384615384616" height="12"></rect><rect data-value="10" fill="#E9ECEF" x="185.3846153846154" y="0" width="6.15384615384616" height="60"></rect><rect data-value="4" fill="#E9ECEF" x="193.07692307692307" y="36" width="6.15384615384616" height="24"></rect></svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Card Counter -->
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 mb-lg-0">
+                                                    
+                                        
+                                        <!-- START Card Counter -->
+                                        <div class="card">
+                                            <div class="card-body pb-0">
+                                                <div class="d-flex mb-3">
+                                                    <span>
+                                                        <span class="mb-3 badge badge-purple badge-pill">
+                                                            <i class=" fa fa-fw fa-caret-up"></i>87%
+                                                        </span>
+                                                        <div class="mb-0 text-inverse">CPU</div>
+                                                        <h2 class="mb-3">
+                                                            98 
+                                                            <small>Mb</small>
+                                                        </h2>
+                                                    </span>
+                                                    <span class="text-right ml-auto">
+                                                        
+                                                            <p class="data-attributes">
+                                                                <span data-peity="{ &quot;fill&quot;: [&quot;#CA8EFF&quot;, &quot;#E9ECEF&quot;], &quot;innerRadius&quot;: 35, &quot;radius&quot;: 42 }" style="display: none;">5/7</span><svg class="peity" height="84" width="84"><path d="M 42 0 A 42 42 0 1 1 1.0530276883634073 51.34587922616521 L 7.877523073636176 49.788232688471005 A 35 35 0 1 0 42 7" data-value="5" fill="#CA8EFF"></path><path d="M 1.0530276883634073 51.34587922616521 A 42 42 0 0 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 0 0 7.877523073636176 49.788232688471005" data-value="2" fill="#E9ECEF"></path></svg>
+                                                            </p>
+                                                        
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <span class="bar peity-bar-secondary" style="display: none;">
+                                                    9,
+                                                    9,
+                                                    4,
+                                                    4,
+                                                    3,
+                                                    3,
+                                                    10,
+                                                    4,
+                                                    10,
+                                                    6,
+                                                    10,
+                                                    1,
+                                                    1,
+                                                    8,
+                                                    8,
+                                                    5,
+                                                    7,
+                                                    9,
+                                                    1,
+                                                    5,
+                                                    7,
+                                                    3,
+                                                    9,
+                                                    9,
+                                                    10,
+                                                    9
+                                                    </span><svg class="peity" height="60" width="200"><rect data-value="9" fill="#E9ECEF" x="0.7692307692307693" y="6" width="6.153846153846154" height="54"></rect><rect data-value="9" fill="#E9ECEF" x="8.461538461538463" y="6" width="6.1538461538461515" height="54"></rect><rect data-value="4" fill="#E9ECEF" x="16.153846153846153" y="36" width="6.153846153846153" height="24"></rect><rect data-value="4" fill="#E9ECEF" x="23.846153846153847" y="36" width="6.153846153846153" height="24"></rect><rect data-value="3" fill="#E9ECEF" x="31.538461538461533" y="42" width="6.15384615384616" height="18"></rect><rect data-value="3" fill="#E9ECEF" x="39.230769230769226" y="42" width="6.15384615384616" height="18"></rect><rect data-value="10" fill="#E9ECEF" x="46.92307692307692" y="0" width="6.15384615384616" height="60"></rect><rect data-value="4" fill="#E9ECEF" x="54.61538461538461" y="36" width="6.153846153846153" height="24"></rect><rect data-value="10" fill="#E9ECEF" x="62.30769230769231" y="0" width="6.15384615384616" height="60"></rect><rect data-value="6" fill="#E9ECEF" x="70" y="24" width="6.15384615384616" height="36"></rect><rect data-value="10" fill="#E9ECEF" x="77.6923076923077" y="0" width="6.153846153846146" height="60"></rect><rect data-value="1" fill="#E9ECEF" x="85.38461538461539" y="54" width="6.153846153846146" height="6"></rect><rect data-value="1" fill="#E9ECEF" x="93.07692307692308" y="54" width="6.153846153846146" height="6"></rect><rect data-value="8" fill="#E9ECEF" x="100.76923076923077" y="12" width="6.153846153846146" height="48"></rect><rect data-value="8" fill="#E9ECEF" x="108.46153846153847" y="12" width="6.153846153846146" height="48"></rect><rect data-value="5" fill="#E9ECEF" x="116.15384615384616" y="30" width="6.153846153846146" height="30"></rect><rect data-value="7" fill="#E9ECEF" x="123.84615384615387" y="18" width="6.153846153846104" height="42"></rect><rect data-value="9" fill="#E9ECEF" x="131.53846153846155" y="6" width="6.153846153846132" height="54"></rect><rect data-value="1" fill="#E9ECEF" x="139.23076923076925" y="54" width="6.153846153846104" height="6"></rect><rect data-value="5" fill="#E9ECEF" x="146.92307692307693" y="30" width="6.153846153846132" height="30"></rect><rect data-value="7" fill="#E9ECEF" x="154.61538461538464" y="18" width="6.153846153846132" height="42"></rect><rect data-value="3" fill="#E9ECEF" x="162.30769230769232" y="42" width="6.153846153846132" height="18"></rect><rect data-value="9" fill="#E9ECEF" x="170" y="6" width="6.15384615384616" height="54"></rect><rect data-value="9" fill="#E9ECEF" x="177.69230769230768" y="6" width="6.15384615384616" height="54"></rect><rect data-value="10" fill="#E9ECEF" x="185.3846153846154" y="0" width="6.15384615384616" height="60"></rect><rect data-value="9" fill="#E9ECEF" x="193.07692307692307" y="6" width="6.15384615384616" height="54"></rect></svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Card Counter -->
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 mb-lg-0">
+                                                    
+                                        
+                                        <!-- START Card Counter -->
+                                        <div class="card">
+                                            <div class="card-body pb-0">
+                                                <div class="d-flex mb-3">
+                                                    <span>
+                                                        <span class="mb-3 badge badge-success badge-pill">
+                                                            <i class=" fa fa-fw fa-caret-down"></i>40%
+                                                        </span>
+                                                        <div class="mb-0 text-inverse">Memory</div>
+                                                        <h2 class="mb-3">
+                                                            60 
+                                                            <small>Kb</small>
+                                                        </h2>
+                                                    </span>
+                                                    <span class="text-right ml-auto">
+                                                        
+                                                            <p class="data-attributes">
+                                                                <span data-peity="{ &quot;fill&quot;: [&quot;#1BB934&quot;, &quot;#E9ECEF&quot;], &quot;innerRadius&quot;: 35, &quot;radius&quot;: 42 }" style="display: none;">2/7</span><svg class="peity" height="84" width="84"><path d="M 42 0 A 42 42 0 0 1 82.94697231163659 51.3458792261652 L 76.12247692636382 49.788232688471005 A 35 35 0 0 0 42 7" data-value="2" fill="#1BB934"></path><path d="M 82.94697231163659 51.3458792261652 A 42 42 0 1 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 1 0 76.12247692636382 49.788232688471005" data-value="5" fill="#E9ECEF"></path></svg>
+                                                            </p>
+                                                        
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <span class="bar peity-bar-secondary" style="display: none;">
+                                                    1,
+                                                    8,
+                                                    10,
+                                                    8,
+                                                    2,
+                                                    2,
+                                                    5,
+                                                    7,
+                                                    2,
+                                                    9,
+                                                    9,
+                                                    4,
+                                                    6,
+                                                    4,
+                                                    7,
+                                                    8,
+                                                    6,
+                                                    10,
+                                                    10,
+                                                    4,
+                                                    9,
+                                                    9,
+                                                    1,
+                                                    2,
+                                                    7,
+                                                    2
+                                                    </span><svg class="peity" height="60" width="200"><rect data-value="1" fill="#E9ECEF" x="0.7692307692307693" y="54" width="6.153846153846154" height="6"></rect><rect data-value="8" fill="#E9ECEF" x="8.461538461538463" y="12" width="6.1538461538461515" height="48"></rect><rect data-value="10" fill="#E9ECEF" x="16.153846153846153" y="0" width="6.153846153846153" height="60"></rect><rect data-value="8" fill="#E9ECEF" x="23.846153846153847" y="12" width="6.153846153846153" height="48"></rect><rect data-value="2" fill="#E9ECEF" x="31.538461538461533" y="48" width="6.15384615384616" height="12"></rect><rect data-value="2" fill="#E9ECEF" x="39.230769230769226" y="48" width="6.15384615384616" height="12"></rect><rect data-value="5" fill="#E9ECEF" x="46.92307692307692" y="30" width="6.15384615384616" height="30"></rect><rect data-value="7" fill="#E9ECEF" x="54.61538461538461" y="18" width="6.153846153846153" height="42"></rect><rect data-value="2" fill="#E9ECEF" x="62.30769230769231" y="48" width="6.15384615384616" height="12"></rect><rect data-value="9" fill="#E9ECEF" x="70" y="6" width="6.15384615384616" height="54"></rect><rect data-value="9" fill="#E9ECEF" x="77.6923076923077" y="6" width="6.153846153846146" height="54"></rect><rect data-value="4" fill="#E9ECEF" x="85.38461538461539" y="36" width="6.153846153846146" height="24"></rect><rect data-value="6" fill="#E9ECEF" x="93.07692307692308" y="24" width="6.153846153846146" height="36"></rect><rect data-value="4" fill="#E9ECEF" x="100.76923076923077" y="36" width="6.153846153846146" height="24"></rect><rect data-value="7" fill="#E9ECEF" x="108.46153846153847" y="18" width="6.153846153846146" height="42"></rect><rect data-value="8" fill="#E9ECEF" x="116.15384615384616" y="12" width="6.153846153846146" height="48"></rect><rect data-value="6" fill="#E9ECEF" x="123.84615384615387" y="24" width="6.153846153846104" height="36"></rect><rect data-value="10" fill="#E9ECEF" x="131.53846153846155" y="0" width="6.153846153846132" height="60"></rect><rect data-value="10" fill="#E9ECEF" x="139.23076923076925" y="0" width="6.153846153846104" height="60"></rect><rect data-value="4" fill="#E9ECEF" x="146.92307692307693" y="36" width="6.153846153846132" height="24"></rect><rect data-value="9" fill="#E9ECEF" x="154.61538461538464" y="6" width="6.153846153846132" height="54"></rect><rect data-value="9" fill="#E9ECEF" x="162.30769230769232" y="6" width="6.153846153846132" height="54"></rect><rect data-value="1" fill="#E9ECEF" x="170" y="54" width="6.15384615384616" height="6"></rect><rect data-value="2" fill="#E9ECEF" x="177.69230769230768" y="48" width="6.15384615384616" height="12"></rect><rect data-value="7" fill="#E9ECEF" x="185.3846153846154" y="18" width="6.15384615384616" height="42"></rect><rect data-value="2" fill="#E9ECEF" x="193.07692307692307" y="48" width="6.15384615384616" height="12"></rect></svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Card Counter -->
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-2 mb-lg-0">
+                                                    
+                                        
+                                        <!-- START Card Counter -->
+                                        <div class="card">
+                                            <div class="card-body pb-0">
+                                                <div class="d-flex mb-3">
+                                                    <span>
+                                                        <span class="mb-3 badge badge-yellow text-white badge-pill">
+                                                            <i class=" fa fa-fw fa-caret-down"></i>98%
+                                                        </span>
+                                                        <div class="mb-0 text-inverse">Disk I/O</div>
+                                                        <h2 class="mb-3">
+                                                            47 
+                                                            <small>Kb</small>
+                                                        </h2>
+                                                    </span>
+                                                    <span class="text-right ml-auto">
+                                                        
+                                                            <p class="data-attributes">
+                                                                <span data-peity="{ &quot;fill&quot;: [&quot;#F7BF47&quot;, &quot;#E9ECEF&quot;], &quot;innerRadius&quot;: 35, &quot;radius&quot;: 42 }" style="display: none;">3/7</span><svg class="peity" height="84" width="84"><path d="M 42 0 A 42 42 0 0 1 60.223117042937446 79.8406924519016 L 57.185930869114536 73.53391037658467 A 35 35 0 0 0 42 7" data-value="3" fill="#F7BF47"></path><path d="M 60.223117042937446 79.8406924519016 A 42 42 0 1 1 41.99999999999999 0 L 41.99999999999999 7 A 35 35 0 1 0 57.185930869114536 73.53391037658467" data-value="4" fill="#E9ECEF"></path></svg>
+                                                            </p>
+                                                        
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <span class="bar peity-bar-secondary" style="display: none;">
+                                                    7,
+                                                    8,
+                                                    9,
+                                                    1,
+                                                    8,
+                                                    6,
+                                                    8,
+                                                    10,
+                                                    10,
+                                                    1,
+                                                    8,
+                                                    10,
+                                                    6,
+                                                    1,
+                                                    10,
+                                                    8,
+                                                    8,
+                                                    6,
+                                                    2,
+                                                    1,
+                                                    2,
+                                                    4,
+                                                    10,
+                                                    1,
+                                                    10,
+                                                    6
+                                                    </span><svg class="peity" height="60" width="200"><rect data-value="7" fill="#E9ECEF" x="0.7692307692307693" y="18" width="6.153846153846154" height="42"></rect><rect data-value="8" fill="#E9ECEF" x="8.461538461538463" y="12" width="6.1538461538461515" height="48"></rect><rect data-value="9" fill="#E9ECEF" x="16.153846153846153" y="6" width="6.153846153846153" height="54"></rect><rect data-value="1" fill="#E9ECEF" x="23.846153846153847" y="54" width="6.153846153846153" height="6"></rect><rect data-value="8" fill="#E9ECEF" x="31.538461538461533" y="12" width="6.15384615384616" height="48"></rect><rect data-value="6" fill="#E9ECEF" x="39.230769230769226" y="24" width="6.15384615384616" height="36"></rect><rect data-value="8" fill="#E9ECEF" x="46.92307692307692" y="12" width="6.15384615384616" height="48"></rect><rect data-value="10" fill="#E9ECEF" x="54.61538461538461" y="0" width="6.153846153846153" height="60"></rect><rect data-value="10" fill="#E9ECEF" x="62.30769230769231" y="0" width="6.15384615384616" height="60"></rect><rect data-value="1" fill="#E9ECEF" x="70" y="54" width="6.15384615384616" height="6"></rect><rect data-value="8" fill="#E9ECEF" x="77.6923076923077" y="12" width="6.153846153846146" height="48"></rect><rect data-value="10" fill="#E9ECEF" x="85.38461538461539" y="0" width="6.153846153846146" height="60"></rect><rect data-value="6" fill="#E9ECEF" x="93.07692307692308" y="24" width="6.153846153846146" height="36"></rect><rect data-value="1" fill="#E9ECEF" x="100.76923076923077" y="54" width="6.153846153846146" height="6"></rect><rect data-value="10" fill="#E9ECEF" x="108.46153846153847" y="0" width="6.153846153846146" height="60"></rect><rect data-value="8" fill="#E9ECEF" x="116.15384615384616" y="12" width="6.153846153846146" height="48"></rect><rect data-value="8" fill="#E9ECEF" x="123.84615384615387" y="12" width="6.153846153846104" height="48"></rect><rect data-value="6" fill="#E9ECEF" x="131.53846153846155" y="24" width="6.153846153846132" height="36"></rect><rect data-value="2" fill="#E9ECEF" x="139.23076923076925" y="48" width="6.153846153846104" height="12"></rect><rect data-value="1" fill="#E9ECEF" x="146.92307692307693" y="54" width="6.153846153846132" height="6"></rect><rect data-value="2" fill="#E9ECEF" x="154.61538461538464" y="48" width="6.153846153846132" height="12"></rect><rect data-value="4" fill="#E9ECEF" x="162.30769230769232" y="36" width="6.153846153846132" height="24"></rect><rect data-value="10" fill="#E9ECEF" x="170" y="0" width="6.15384615384616" height="60"></rect><rect data-value="1" fill="#E9ECEF" x="177.69230769230768" y="54" width="6.15384615384616" height="6"></rect><rect data-value="10" fill="#E9ECEF" x="185.3846153846154" y="0" width="6.15384615384616" height="60"></rect><rect data-value="6" fill="#E9ECEF" x="193.07692307692307" y="24" width="6.15384615384616" height="36"></rect></svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Card Counter -->
+                        </div>
+                    </div>
+        
+                    <script src="/assets/js/jquery.peity.js"></script>
+                    <script src="/assets/js/jquery.peity-system.js"></script>
+                    <!-- Init Donut (Peity) -->
+                    <script>
+                        $('.donut').peity('donut')
+                    </script>
+                    <!-- Init Inline Settings for Donut (Peity) -->
+                    <script>
+                        $(".data-attributes span").peity("donut")
+                    </script>
+                    <!-- END CONTENT -->
+                </div>
+            </div>
+            <!-- /CONTENT LAYOUT -->
+        </div>
+
+    </div>
+    <!-- /Wrapper -->
+    
+    <!-- JS libs -->
+    <script>
+        Dashboard.Layout.init($, window, document);
+    </script>
+    <script defer="" src="/assets/libs/popper.js/popper.min.js"></script>
+    <script defer="" src="/assets/libs/faker/faker.min.js"></script>
+    <script defer="" src="/assets/libs/holder/holder.min.js"></script>
+
+    <!-- Own Js -->
+    <script defer="" src="/assets/js/faker.js"></script>
+    <script defer="" src="/assets/js/init.js"></script>
+    <script defer="" src="/assets/js/dashboard-version.js"></script>
+    <script defer="" src="/assets/js/animate.js"></script>
   </body>
 </html>
