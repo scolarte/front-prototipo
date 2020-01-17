@@ -1,0 +1,11 @@
+.bg-gray-100 {
+    background-color: #F8F9FA !important;
+}
+
+.brand,
+.brand:active,
+.brand:hover,
+.brand:visited {
+    font-size: 3em;
+    text-decoration: none;
+}
